@@ -1,5 +1,5 @@
 const relogio = document.querySelector('.relogio')
-
+const historico = document.querySelector('.historico')
 const iniciar = document.querySelector('.iniciar')
 const pausar = document.querySelector('.pausar')
 const zerar = document.querySelector('.zerar')
@@ -11,7 +11,6 @@ let timer
 iniciar.addEventListener('click', function (e) {
     clearInterval(timer)
     iniciaRelogio()
-
 })
 
 pausar.addEventListener('click', function (e) {
@@ -37,5 +36,5 @@ function iniciaRelogio() {
     timer = setInterval(function () {
         segundos++
         relogio.innerHTML = criarSegundos(segundos)
-    }, 1000)
+    }, 100)
 }

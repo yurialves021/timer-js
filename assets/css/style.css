@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 :root {
-  --primary-color: rgb(17, 86, 102);
-  --primary-color-darker: rgb(9, 48, 56);
+  --primary-color: rgb(65, 88, 107);
+  --primary-color-darker: rgb(4, 36, 1);
 }
 
 * {
@@ -15,11 +15,13 @@ body {
   background: var(--primary-color);
   font-family: 'Open sans', sans-serif;
   font-size: 1.3em;
-  line-height: 1.5em;
+  line-height: 1.5em; 
+  text-align: center;
 }
 
+
 .container {
-  max-width: 640px;
+  max-width: 340px;
   margin: 50px auto;
   background: #fff;
   padding: 20px;
@@ -42,19 +44,19 @@ form input:focus {
   outline: 1px solid var(--primary-color);
 }
 
-form button {
+button {
   border: none;
   background: var(--primary-color);
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   height: 50px;
   cursor: pointer;
   margin-top: 30px;
 }
 
-form button:hover {
-  background: var(--primary-color-darker);
+button:hover {
+  background-color: var(--primary-color-darker);
 }
 .relogio {
   font-size: 3em;
